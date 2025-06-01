@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Mãe de Deus - Devoção e Fé</title>
+    <meta name="description" content="Landing page dedicada à devoção de Maria Mãe de Deus, com orações, reflexões e conteúdo espiritual.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-praying-hands"></i>
+                    <span>Maria, Mãe de Deus</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#oracoes" class="nav-link">Orações</a></li>
+                    <li><a href="#reflexoes" class="nav-link">Reflexões</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Maria, Mãe de Deus</h1>
+                <p class="hero-subtitle">Encontre paz e esperança na devoção à Nossa Senhora</p>
+                <p class="hero-description">
+                    "Eis aqui a serva do Senhor; faça-se em mim segundo a tua palavra." (Lucas 1:38)
+                </p>
+                <div class="hero-buttons">
+                    <a href="#oracoes" class="btn btn-primary">Orações</a>
+                    <a href="#reflexoes" class="btn btn-secondary">Reflexões</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-heart"></i>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Maria Mãe de Deus</h2>
+                <p>Conheça mais sobre a devoção à Nossa Senhora</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-item">
+                        <div class="icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Rainha do Céu</h3>
+                            <p>Maria foi escolhida por Deus para ser a Mãe de Jesus, nosso Salvador. Ela é venerada como a Rainha do Céu e intercessora por todos nós.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="icon">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Mãe Amorosa</h3>
+                            <p>Como mãe de Jesus, Maria cuida de todos os seus filhos com amor maternal, guiando-nos sempre ao encontro de seu Filho.</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <div class="content">
+                            <h3>Nossa Intercessora</h3>
+                            <p>Maria intercede por nós junto a Jesus, levando nossas súplicas e orações ao coração misericordioso de seu Filho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Orações Section -->
+    <section id="oracoes" class="prayers">
+        <div class="container">
+            <div class="section-header">
+                <h2>Orações</h2>
+                <p>Eleve seu coração a Maria através destas orações</p>
+            </div>
+            <div class="prayers-grid">
+                <div class="prayer-card">
+                    <div class="prayer-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Ave Maria</h3>
+                    <p class="prayer-text">
+                        Ave Maria, cheia de graça, o Senhor é convosco. 
+                        Bendita sois vós entre as mulheres, 
+                        e bendito é o fruto do vosso ventre, Jesus.
+                    </p>
+                    <div class="prayer-actions">
+                        <button class="btn-expand" data-prayer="ave-maria">Ler completa</button>
+                        <a href="#" class="btn-chatgpt" data-prayer="Ave Maria" target="_blank">
+                            <i class="fas fa-robot"></i>
+                            Pesquisar com IA
+                        </a>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <div class="prayer-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Salve Rainha</h3>
+                    <p class="prayer-text">
+                        Salve, Rainha, mãe de misericórdia, 
+                        vida, doçura e esperança nossa, salve! 
+                        A vós bradamos, os degredados filhos de Eva...
+                    </p>
+                    <div class="prayer-actions">
+                        <button class="btn-expand" data-prayer="salve-rainha">Ler completa</button>
+                        <a href="#" class="btn-chatgpt" data-prayer="Salve Rainha" target="_blank">
+                            <i class="fas fa-robot"></i>
+                            Pesquisar com IA
+                        </a>
+                    </div>
+                </div>
+                <div class="prayer-card">
+                    <div class="prayer-icon">
+                        <i class="fas fa-hands-praying"></i>
+                    </div>
+                    <h3>Memorare</h3>
+                    <p class="prayer-text">
+                        Lembrai-vos, ó piíssima Virgem Maria, 
+                        que jamais se ouviu dizer que alguém, 
+                        recorrendo à vossa proteção...
+                    </p>
+                    <div class="prayer-actions">
+                        <button class="btn-expand" data-prayer="memorare">Ler completa</button>
+                        <a href="#" class="btn-chatgpt" data-prayer="Memorare" target="_blank">
+                            <i class="fas fa-robot"></i>
+                            Pesquisar com IA
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflexões Section -->
+    <section id="reflexoes" class="reflections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reflexões</h2>
+                <p>Momentos de contemplação e meditação</p>
+            </div>
+            <div class="reflections-content">
+                <div class="reflection-card active">
+                    <div class="reflection-header">
+                        <h3>O Sim de Maria</h3>
+                        <span class="date">Reflexão Diária</span>
+                    </div>
+                    <div class="reflection-text">
+                        <p>
+                            O "sim" de Maria mudou a história da humanidade. Com sua aceitação humilde da vontade de Deus, 
+                            ela se tornou o instrumento através do qual a salvação chegou ao mundo. 
+                            Que possamos, como Maria, sempre dizer "sim" aos planos de Deus em nossas vidas.
+                        </p>
+                        <blockquote>
+                            "Eis aqui a serva do Senhor; faça-se em mim segundo a tua palavra." - Lucas 1:38
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="reflection-navigation">
+                    <button class="nav-btn prev" id="prevReflection">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="dots-indicator">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="nav-btn next" id="nextReflection">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Compartilhe suas intenções de oração ou envie suas dúvidas</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-church"></i>
+                        <div>
+                            <h4>Paróquia</h4>
+                            <p>Participe das celebrações em nossa comunidade</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Intenções de Oração</h4>
+                            <p>Envie suas intenções e pedidos de oração</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h4>Testemunhos</h4>
+                            <p>Compartilhe suas graças recebidas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="whatsapp-contact">
+                    <div class="whatsapp-header">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Fale Conosco pelo WhatsApp</h3>
+                        <p>Escolha o tipo de mensagem e entre em contato</p>
+                    </div>
+                    <div class="whatsapp-buttons">
+                        <a href="#" class="whatsapp-btn" data-type="oracao">
+                            <div class="btn-icon">
+                                <i class="fas fa-praying-hands"></i>
+                            </div>
+                            <div class="btn-content">
+                                <h4>Intenção de Oração</h4>
+                                <p>Compartilhe seus pedidos de oração</p>
+                            </div>
+                        </a>
+                        <a href="#" class="whatsapp-btn" data-type="testemunho">
+                            <div class="btn-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="btn-content">
+                                <h4>Testemunho</h4>
+                                <p>Conte sobre as graças recebidas</p>
+                            </div>
+                        </a>
+                        <!-- <a href="#" class="whatsapp-btn" data-type="duvida">
+                            <div class="btn-icon">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                            <div class="btn-content">
+                                <h4>Dúvida Espiritual</h4>
+                                <p>Tire suas dúvidas sobre fé</p>
+                            </div>
+                        </a> -->
+                        <!-- <a href="#" class="whatsapp-btn" data-type="geral">
+                            <div class="btn-icon">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="btn-content">
+                                <h4>Mensagem Geral</h4>
+                                <p>Outro tipo de contato</p>
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="whatsapp-info">
+                        <p><i class="fab fa-whatsapp"></i></p>
+                        <small>Clique em uma das opções acima para iniciar a conversa</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-praying-hands"></i>
+                        <span>Maria Mãe de Deus</span>
+                    </div>
+                    <p>Que Maria nos conduza sempre ao seu Filho Jesus Cristo.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#oracoes">Orações</a></li>
+                        <li><a href="#reflexoes">Reflexões</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Orações Populares</h4>
+                    <ul class="prayer-links">
+                        <li>
+                            <a href="#" class="footer-prayer-link" data-prayer="Terço">
+                                <span>Terço</span>
+                                <i class="fas fa-robot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-prayer-link" data-prayer="Novena">
+                                <span>Novena</span>
+                                <i class="fas fa-robot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-prayer-link" data-prayer="Consagração">
+                                <span>Consagração</span>
+                                <i class="fas fa-robot"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-prayer-link" data-prayer="Ladainha">
+                                <span>Ladainha</span>
+                                <i class="fas fa-robot"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Maria, Mãe de Deus. Feito com amor e devoção.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Prayer Modal -->
+    <div id="prayerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <h3 id="modalTitle"></h3>
+                <div id="modalText"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
