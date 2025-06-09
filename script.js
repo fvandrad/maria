@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeFooterPrayerLinks();
     initializeScrollAnimations();
     initializeHeaderScroll();
+    initializeMysteries(); // Adicionar inicialização dos mistérios
 });
 
 // Navegação mobile
@@ -526,4 +527,77 @@ if ('serviceWorker' in navigator) {
                 console.log('SW falhou:', registrationError);
             });
     });
+}
+
+// Mistérios do Rosário
+function initializeMysteries() {
+    const mysteryTabs = document.querySelectorAll('.mystery-tab');
+    const mysteryGroups = document.querySelectorAll('.mystery-group');
+    
+    mysteryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetMystery = tab.getAttribute('data-mystery');
+            
+            // Remove active class from all tabs and groups
+            mysteryTabs.forEach(t => t.classList.remove('active'));
+            mysteryGroups.forEach(g => g.classList.remove('active'));
+            
+            // Add active class to clicked tab and corresponding group
+            tab.classList.add('active');
+            document.getElementById(targetMystery).classList.add('active');
+            
+            // Smooth scroll to mysteries section if not in view
+            const mysteriesSection = document.getElementById('misterios');
+            const rect = mysteriesSection.getBoundingClientRect();
+            if (rect.top < 0 || rect.bottom > window.innerHeight) {
+                mysteriesSection.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'start' 
+                });
+            }
+            
+            // Add fade animation
+            const activeGroup = document.getElementById(targetMystery);
+            activeGroup.style.opacity = '0';
+            setTimeout(() => {
+                activeGroup.style.opacity = '1';
+            }, 100);
+            
+            // Analytics tracking (opcional)
+            trackMysteryView(targetMystery);
+        });
+    });
+    
+    // Adicionar animação de fade nos mystery cards
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+    
+    // Observar mystery cards para animação
+    const mysteryCards = document.querySelectorAll('.mystery-card');
+    mysteryCards.forEach(card => {
+        card.classList.add('fade-in');
+        observer.observe(card);
+    });
+}
+
+function trackMysteryView(mysteryType) {
+    console.log(`Mystery viewed: ${mysteryType}`);
+    
+    // Exemplo com Google Analytics (se estiver implementado)
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'mystery_view', {
+            'mystery_type': mysteryType,
+            'section': 'mysteries'
+        });
+    }
 }
