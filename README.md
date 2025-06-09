@@ -35,10 +35,10 @@ Oferecer uma plataforma digital acessível e inspiradora que conecte os devotos 
 2. **🌟 Hero Section**: Apresentação principal com call-to-actions destacados
 3. **📋 Sobre**: Informações sobre Maria e sua importância na fé católica
 4. **🙏 Orações**: Cards interativos com as principais orações marianas
-🆕. **Mistérios do Rosário**:Contemple a vida de Jesus e Maria através dos santos mistérios
-5. **💭 Reflexões**: Sistema rotativo de meditações espirituais
-6. **📞 Contato**: Integração WhatsApp e informações de contato
-7. **📚 Footer**: Links úteis e orações populares com IA
+5. **🌅 Mistérios do Rosário**:Contemple a vida de Jesus e Maria através dos santos mistérios
+6. **💭 Reflexões**: Sistema rotativo de meditações espirituais
+7. **📞 Contato**: Integração WhatsApp e informações de contato
+8. **📚 Footer**: Links úteis e orações populares com IA
 
 ---
 
