@@ -11,7 +11,7 @@
 
 Uma landing page dedicada à devoção mariana, oferecendo orações, reflexões e contato direto via WhatsApp com integração inteligente para pesquisas sobre orações católicas.
 
-[Demo ao Vivo](https://seu-usuario.github.io/maria) • [Reportar Bug](../../issues) • [Solicitar Feature](../../issues)
+[Demo ao Vivo](https://fvandrad.github.io/maria) • [Reportar Bug](../../issues) • [Solicitar Feature](../../issues)
 
 </div>
 
@@ -80,10 +80,10 @@ Oferecer uma plataforma digital acessível e inspiradora que conecte os devotos 
 
 ```bash
 # Clone este repositório
-git clone https://github.com/seu-usuario/nossa-senhora.git
+git clone https://github.com/seu-usuario/maria.git
 
 # Entre no diretório do projeto
-cd nossa-senhora
+cd maria
 ```
 
 #### Opção 3: Live Server (VS Code)
@@ -128,7 +128,7 @@ Abra seu navegador e acesse: `http://localhost:8000`
 ## 📁 Estrutura do Projeto
 
 ```
-nossa-senhora/
+maria/
 │
 ├── 📄 index.html          # Página principal
 ├── 🎨 styles.css          # Estilos CSS
