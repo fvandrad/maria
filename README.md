@@ -11,7 +11,7 @@
 
 Uma landing page dedicada à devoção mariana, oferecendo orações, reflexões e contato direto via WhatsApp com integração inteligente para pesquisas sobre orações católicas.
 
-[Demo ao Vivo](https://seu-usuario.github.io/nossa-senhora) • [Reportar Bug](../../issues) • [Solicitar Feature](../../issues)
+[Demo ao Vivo](https://seu-usuario.github.io/maria) • [Reportar Bug](../../issues) • [Solicitar Feature](../../issues)
 
 </div>
 
